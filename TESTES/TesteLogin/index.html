@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Login</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <main>
+        <div class="box-degrade">
+
+            <div class="form-login">
+                <div class="img-log">
+                    <img src="img/logo.png" alt="logo" width="220">
+                </div>
+                <form action="" id="login">
+
+                    <h1>LOGIN</h1>
+                    <div class="input-single">
+                        <!-- <i class="fa fa-windows"></i> -->
+                        <input type="text" name="" id="name-box" class="input" maxlength="17">
+                        <img for="name-box" src="img/icon-user.png" alt="" width="60">
+                    </div>
+                    <div class="input-single">
+                        <input type="text" name="" id="key-box" class="input" maxlength="17">
+                        <!-- <i class="fa fa-unlock"></i> -->
+                        <img for="name-box" src="img/icon-key.png" alt="" width="60">
+                    </div>
+                    <div class="alert">
+                        <label for="" id="laber-alert"></label>
+                    </div>
+                    <div class="btn">
+                        <input type="submit" value="ENTER" onclick="logar(); return false">
+                        <!-- <input type="submit" value="ENTRAR"> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function logar() {
+            var login = document.getElementById('name-box').value
+            var senha = document.getElementById('key-box').value
+
+            if (login == "Tiago" && senha == "1234") {
+                location.href = "index2.html"
+            } else {
+                alert("USUÁRIO OU SENHA INCORRETOS");
+
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
